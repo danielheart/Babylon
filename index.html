@@ -1,86 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>Daniel's Labs</title>
-        <link rel="icon" href="/v2-icon.svg" type="image/svg+xml" />
+   <head>
+      <meta charset="utf-8" />
+      <title>Daniel's Labs</title>
+      <style>
+         body {
+            margin: 0;
+            height: 100vh;
+         }
+         .container {
+            display: flex;
+            flex-direction: row;
+            height: 100vh;
+         }
 
-        <style>
-            body {
-                margin: 0;
-                height: 100vh;
-            }
-            .container {
-                display: flex;
-                flex-direction: row;
-                height: 100vh;
-            }
+         .left {
+            flex: 1.5;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+         }
 
-            .left {
-                flex: 1.5;
-                background-color: #ffffff;
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-            }
+         .up {
+            flex: 1;
+            background-color: #ccc;
+            height: 50%;
+            width: 100%;
+            overflow: hidden;
+         }
+         .low {
+            flex: 1;
+            background-color: #e5e5e5;
+            overflow: hidden;
+            height: 50%;
+            width: 100%;
+         }
+         .right {
+            flex: 2;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+         }
 
-            .up {
-                flex: 1;
-                background-color: #ccc;
-                height: 50%;
-                width: 100%;
-                overflow: hidden;
-            }
-            .low {
-                flex: 1;
-                background-color: #e5e5e5;
-                overflow: hidden;
-                height: 50%;
-                width: 100%;
-            }
-            .right {
-                flex: 2;
-                background-color: #ffffff;
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-            }
-
-            .world {
-                flex: 4;
-                background-color: #ccc;
-                /* height: 10%; */
-                width: 100%;
-                overflow: hidden;
-            }
-            #right-world {
-                width: 100%;
-                height: 100%;
-            }
-            .workers {
-                flex: 1;
-                background-color: #ffffff;
-                display: flex;
-                flex-direction: row;
-                overflow: hidden;
-            }
-            .workers canvas {
-                width: 20%;
-                /* overflow: hidden; */
-            }
-        </style>
-    </head>
-    <body>
-        <script type="module" src="/index.js"></script>
-        <div class="container">
-            <div class="left">
-                <canvas class="up" id="left-up-world"></canvas>
-                <canvas class="low" id="left-low-world"></canvas>
-            </div>
-            <div class="right">
-                <div class="world"><canvas id="right-world" /></div>
-                <div class="workers"></div>
-            </div>
-        </div>
-    </body>
+         .world {
+            flex: 4;
+            background-color: #ccc;
+            /* height: 10%; */
+            width: 100%;
+            overflow: hidden;
+         }
+         #right-world {
+            width: 100%;
+            height: 100%;
+         }
+         .workers {
+            flex: 1;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: row;
+            overflow: hidden;
+         }
+         .workers canvas {
+            width: 20%;
+            /* overflow: hidden; */
+         }
+      </style>
+   </head>
+   <body>
+      <script type="module" src="/index.js"></script>
+      <div class="container">
+         <div class="left">
+            <canvas class="up" id="left-up-world"></canvas>
+            <canvas class="low" id="left-low-world"></canvas>
+         </div>
+         <div class="right">
+            <div class="world"><canvas id="right-world" /></div>
+            <div class="workers"></div>
+         </div>
+      </div>
+   </body>
 </html>
