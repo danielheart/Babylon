@@ -338,7 +338,6 @@ function align() {
    )
       .then((response) => response.json())
       .then((data) => {
-         // console.log(data)
          var matrixArray = [...data]
          var matrix = BABYLON.Matrix.FromArray(
             adjustTranslationMatrix(matrixArray),
