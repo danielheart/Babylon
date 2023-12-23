@@ -90,6 +90,7 @@ export function init(data) {
 }
 // 加载模型
 export function model(data) {
+   //
    if (data.object === 'upperjaw' || data.object === 'lowerjaw') {
       if (data.path.endsWith('stl'))
          stlLoader.load(data.path, function (geom) {
