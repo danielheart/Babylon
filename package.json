@@ -1,8 +1,11 @@
 {
-  "dependencies": {
-    "babylonjs": "^6.33.1",
-    "babylonjs-loaders": "^6.33.1",
-    "three": "^0.159.0",
-    "three-mesh-bvh": "^0.6.8"
-  }
+   "dependencies": {
+      "babylonjs": "^6.33.1",
+      "babylonjs-loaders": "^6.33.1",
+      "three": "^0.159.0",
+      "three-mesh-bvh": "^0.6.8"
+   },
+   "devDependencies": {
+      "vite": "^4.4.11"
+   }
 }
